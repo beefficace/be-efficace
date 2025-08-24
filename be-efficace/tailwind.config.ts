@@ -14,6 +14,10 @@ const config: Config = {
         'pale-gold': '#D4A373',
         'moss-green': '#8FBC8F',
         'linen': '#F5F5DC',
+        'blue-900': '#30478A',
+        'purple-800': '#8A3082',
+        'gold-200': '#D4A373',
+        'gold-300': '#C69362',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
