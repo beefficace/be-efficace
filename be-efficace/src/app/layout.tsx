@@ -5,12 +5,10 @@ import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
 });
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-playfair-display",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" data-theme="dark">
-      <body
-        className={`${inter.variable} ${playfairDisplay.variable} font-sans bg-linen text-gray-800 antialiased`}
-      >
+      <body className="antialiased">
         <Header />
         {children}
       </body>

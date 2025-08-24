@@ -3,18 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --font-inter: "Inter", sans-serif;
-    --font-playfair-display: "Playfair Display", serif;
-  }
-
   body {
-    @apply font-sans;
-    background: linear-gradient(to right, #30478A, #8A3082);
+    @apply font-body bg-gray-50;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    @apply font-display;
   }
 }
 

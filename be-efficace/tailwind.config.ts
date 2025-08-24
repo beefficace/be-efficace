@@ -2,29 +2,35 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        'deep-blue': '#30478A',
-        'electric-violet': '#8A3082',
-        'pale-gold': '#D4A373',
-        'moss-green': '#8FBC8F',
-        'linen': '#F5F5DC',
-        'blue-900': '#30478A',
-        'purple-800': '#8A3082',
-        'gold-200': '#D4A373',
-        'gold-300': '#C69362',
+        'blue': {
+          900: '#1E3A8A', // Bleu profond (stabilité)
+          800: '#2563EB', // Bleu légèrement plus clair
+        },
+        'purple': {
+          800: '#7C3AED', // Violet électrique (transformation)
+          900: '#5B21B6', // Violet plus profond
+        },
+        'gold': {
+          200: '#FDE68A', // Doré pâle (sagesse)
+          300: '#FCD34D', // Doré un peu plus soutenu
+        },
+        'green': {
+          600: '#22C55E', // Vert mousse (croissance)
+        },
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        'display': ['Playfair Display', 'serif'],
+        'body': ['Inter', 'sans-serif'],
       },
     },
   },
   plugins: [],
 }
-export default config
+
+export default config;
